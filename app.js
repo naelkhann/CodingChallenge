@@ -6,9 +6,14 @@ function wipeBox(){
 
 function addToList(){
   var input_area = document.getElementById('input_area').value;
-  list_array.push(input_area);
-  wipeBox();
-  displayList(list_array);
+  if(input_area != ""){
+    list_array.push(input_area);
+    wipeBox();
+    displayList(list_array);
+  }
+  else{
+    alert("You did not submit any text!");
+  }
 }
 
 function genDelButton(){
@@ -20,7 +25,7 @@ function genDelButton(){
 }
 
 function displayList(array){
-  var ul = document.getElementById('reusable_list');
+  var ul = document.getElementById('form_list_ul');
   ul.innerHTML = "";
   for(var i=0; i < array.length; i++){
       var li = document.createElement("li");
@@ -41,4 +46,8 @@ function deleteFromList(clicked){
     }
   }
   displayList(list_array);
+}
+
+function submitToList(){
+  return list_array;
 }

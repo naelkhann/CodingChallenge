@@ -3,10 +3,10 @@ body{
   font-family: Lato, sans-serif;
 }
 
-.container{
+/*.container{
   width: 100%;
   margin: 20px auto;
-}
+}*/
 
 form{
   width: 100%;
@@ -41,7 +41,7 @@ form{
 
 }
 
-#submit{
+#add{
   border: 0px;
   width: 3%;
   font-size: 16px;
@@ -53,12 +53,12 @@ form{
   transition: all 0.2s ease-out;
 }
 
-#submit:hover{
+#add:hover{
   background-color: #fff;
   color: #37a;
 }
 
-#submit_form{
+#form_list_submit{
   width:20%;
   border: 0px;
   padding: 4px;
@@ -71,7 +71,7 @@ form{
   transition: all 0.2s ease;
 }
 
-#submit_form:hover{
+#form_list_submit:hover{
   background-color: #6bb828;
   color: #fff;
 }

@@ -10,12 +10,12 @@
   </head>
 
   <body>
-    <div class="container">
+    <form class="form_list">
         <input type='text' id='input_area' placeholder="Type to add to list" />
-        <input type='button' id='submit' value="Add" onclick="addToList()" />
-        <ul id="reusable_list">
+        <input type='button' id='add' value="Add" onclick="addToList()" />
+        <ul id="form_list_ul">
         </ul>
-        <button id="submit_form">Submit List As Array</button>
-    </div>
+        <button id="form_list_submit" onclick="submitToList()">Submit List As Array</button>
+    </form
   </body>
 </html>
