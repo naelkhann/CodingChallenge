@@ -14,7 +14,7 @@ function addToList(){
 function genDelButton(){
   var del_btn = document.createElement("button");
   del_btn.setAttribute('id', 'delete');
-  del_btn.setAttribute('onclick', 'deleteFromList(this)');
+  del_btn.setAttribute('onclick', 'deleteFromList(this)')
   del_btn.innerHTML = "Delete";
   return del_btn;
 }
@@ -31,6 +31,14 @@ function displayList(array){
   }
 }
 
-function deleteFromList(clicked){
 
+function deleteFromList(clicked){
+  var clicked_text = clicked.previousSibling.textContent;
+  for(var i = 0; i < list_array.length; i++){
+    if(clicked_text == list_array[i]){
+      list_array.splice(i,1);
+      break;
+    }
+  }
+  displayList(list_array);
 }
