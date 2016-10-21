@@ -1,4 +1,4 @@
-# Coding Challenge
+# Vanilla JS To-Do List
 ### by Nael Khan
 This coding challenge required building a reusable form component. The form component is implemented via a Javascript script, CSS styles, and some classes and id attributes to add to your HTML tags.
 
